@@ -1,0 +1,8 @@
+.shop-list .top-nav-bar .am-navbar-left,
+.am-menu .am-flexbox .am-flexbox-item .am-list .am-list-item .am-list-line .am-list-content{
+    font-size: 12px;
+}
+.shop-list .top-nav-bar .am-navbar-left, .am-menu .am-flexbox .am-flexbox-item .am-list .am-list-item .am-list-line .am-list-content{
+    padding-left: 20px;
+}
+

@@ -1,0 +1,40 @@
+.comment-score-wapper{
+    text-align: center;
+    display: flex;
+}
+.comment-score-wapper .left{
+    width: 40%;
+    background-color: white;
+    margin: 5px 0 20px 0;
+}
+.comment-score-wapper .left div:nth-child(1){
+    font-size: 25px;
+    color: orange;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.comment-score-wapper .left div:nth-child(2){
+    font-size: 12px;
+    line-height: 18px;
+}
+.comment-score-wapper .left div:nth-child(3){
+    font-size: 12px;
+    transform: scale(.6);
+    margin-bottom: 20px;
+}
+.comment-score-wapper .right{
+    line-height: 25px;
+    font-size: 13px;
+    padding: 13px 0 0 20px;
+}
+.comment-score-wapper .right div:nth-child(1) span:nth-child(2),
+.comment-score-wapper .right div:nth-child(2) span:nth-child(2){
+    font-size: 12px;
+    color: orange;
+    margin-left: 50px;
+}
+.comment-score-wapper .right div:nth-child(3) span:nth-child(2){
+    font-size: 12px;
+    margin-left: 50px;
+    transform: scale(.4);
+}

@@ -1,0 +1,18 @@
+.hot-city{
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 10px;
+    border: 1px solid #F1F3F4;
+}
+.hot-city-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hot-city-list li{
+    width: 88px;
+    border: 1px solid #DEE1E6;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    color: #108EE9;
+}

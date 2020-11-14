@@ -1,0 +1,27 @@
+.city-name span{
+    color: #5F6368;
+}
+.city-name{
+    height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+.city-into{
+    display: flex;
+    flex-wrap: wrap;
+}
+.city-into li{
+    width: 24%;
+    line-height: 30px;
+    border: 1px solid #DEE1E6;
+    margin: .5px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

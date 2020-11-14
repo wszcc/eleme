@@ -1,0 +1,30 @@
+.comment-info-wapper img{
+    width: 100%;
+    width: 100%;
+}
+.comment-info-wapper {
+    border-top: 1px solid #DEE1E6;
+}
+.comment-info-wapper div{
+    margin: 10px 0;
+    border-top: 1px solid #DEE1E6;
+
+}
+.comment-info-wapper .img-box{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.comment-info-wapper .info-wapper {
+    display: flex;
+}
+.comment-info-wapper .username,
+.comment-info-wapper .time{
+    font-size: 12px;
+    transform: scale(.7);
+}
+.comment-info-wapper .time{
+    margin-left: 100px;
+}

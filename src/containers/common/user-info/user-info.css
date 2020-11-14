@@ -1,0 +1,51 @@
+.user-info-wapper img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 230px;
+    margin-top: 10px;
+}
+.user-info-wapper .head{
+    margin-top: 20px;
+    background-color: white;
+    font-size: 13px;
+    padding-left: 20px;
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    margin-bottom: 3px;
+}
+.user-info-wapper .user-name{
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 15px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+.user-info-wapper .user-name span{
+    margin-right: 230px;
+    font-size: 13px;
+}
+.user-info-wapper .address{
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 13px;
+    background-color: white;
+}
+.user-info-wapper .address i{
+    margin-left: 235px;
+}
+.user-info-wapper .phone div:nth-child(1){
+    line-height: 30px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.user-info-wapper .phone div:nth-child(2){
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 13px;
+    background-color: white;
+}
+.user-info-wapper .phone i{
+    margin-left: 260px;
+}

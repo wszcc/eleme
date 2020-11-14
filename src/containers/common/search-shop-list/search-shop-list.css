@@ -1,0 +1,33 @@
+.search-shop-list{
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid #DEE1E6;
+}
+.search-shop-list img{
+    width: 50px;
+    height: 50px;
+}
+.search-shop-list ul{
+    padding-left: 10px;
+}
+.search-shop-list ul li:nth-child(1){
+    font-size: 12px;
+    border-radius: 3px;
+    margin-left: -3px;
+    background-color: yellow;
+    padding: 2px;
+    border: 1px solid black;
+    display: inline-block;
+    transform: scale(.7);
+}
+.search-shop-list ul li:nth-child(2){
+    font-size: 12px;
+    line-height: 20px;
+    transform: scale(.8);
+    margin-left: -15px;
+}
+.search-shop-list ul li:nth-child(3){
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: -8px;
+}

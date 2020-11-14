@@ -1,0 +1,10 @@
+.am-list-item .am-input-extra{
+    max-height: 40px;
+}
+.alert{
+    font-size: 8px;
+    color: red;
+    margin: 10px 0;
+}
+
+

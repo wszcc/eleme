@@ -1,0 +1,101 @@
+.near-resturant-title{
+    font-size: 11px;
+    line-height: 20px;
+    padding-left: 20px;
+    margin: 20px 0;
+    color: #5F6368;
+    border-top: 1px solid #DEE1E6;
+}
+.near-resturant{
+    border-top: 1px solid #DEE1E6;
+    padding: 5px 0;
+}
+.near-resturant ul{
+    display: flex;
+}
+.near-resturant ul li:nth-child(1) img{
+    width: 55px;
+    height: 55px;
+}
+.near-resturant ul li:nth-child(1){
+    height: 55px;
+
+    width: 20%;
+    text-align: center;
+    line-height: 55px;
+}
+.near-resturant .left div:nth-child(1) span:nth-child(1){
+    background-color: yellow;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+
+}
+.near-resturant .left div:nth-child(1) span:nth-child(2){
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.near-resturant .left div:nth-child(2) span:nth-child(1){
+    color: orange;
+    font-size: 12px;
+    margin-left: 7px;
+    -webkit-transform:scale(0.8);
+    display:inline-block;
+    margin-top: 8px;
+}
+.near-resturant .left div:nth-child(2) span:nth-child(2){
+    font-size: .1rem;
+    text-align: center;
+    margin-left: 10px;
+    -webkit-transform:scale(0.8);
+    display:inline-block;
+    margin-top: 8px;
+
+}
+.near-resturant .left div:nth-child(3){
+    font-size: .1rem;
+    text-align: center;
+    margin-top: 5px;
+    -webkit-transform:scale(0.8);
+    display:inline-block;
+    width: 200px;
+    margin-left: -35px;
+}
+.near-resturant .right div:nth-child(1){
+    font-size: 12px;
+    -webkit-transform:scale(0.8);
+    padding-left: 80px;
+}
+.near-resturant .right div:nth-child(2){
+    font-size: 12px;
+    -webkit-transform:scale(0.6);
+    line-height: 20px;
+    margin-top: 6px;
+    margin-left: 18px;
+}
+.near-resturant .right div:nth-child(3){
+    font-size: 12px;
+    -webkit-transform:scale(0.6);
+    line-height: 22px;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.near-resturant .right div:nth-child(2) span:nth-child(1){
+    background-color: #108EE9;
+    color: white;
+    padding: 2px;
+    margin: 4px;
+}
+.near-resturant .right div:nth-child(2) span:nth-child(2){
+    border: 1px solid #108EE9;
+}
+.near-resturant .right div:nth-child(3) span:nth-child(2){
+    color: #108EE9;
+}

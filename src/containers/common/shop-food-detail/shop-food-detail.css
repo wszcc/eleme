@@ -1,0 +1,54 @@
+.shop-food-detail-wapper .title span:nth-child(1){
+    font-size: 15px;
+    font-weight: 600;
+}
+.shop-food-detail-wapper .title span:nth-child(2){
+    font-size: 12px;
+    color: #BEC0C2;
+    margin-left: 10px;
+}
+.shop-food-detail-wapper .title{
+    line-height: 40px;
+    padding-left: 10px;
+}
+.shop-food-detail-wapper .detail-info-item{
+    display: flex;
+    line-height: 20px;
+}
+.shop-food-detail-wapper .detail-info-item img{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+.shop-food-detail-wapper .detail-info-item li:nth-child(1){
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.shop-food-detail-wapper .detail-info-item li:nth-child(2),
+.shop-food-detail-wapper .detail-info-item li:nth-child(3){
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.shop-food-detail-wapper .detail-info-item li:nth-child(4) span:nth-child(1){
+    color: orange;
+    margin-right: 90px;
+}
+.shop-food-detail-wapper .detail-info-item li:nth-child(4) span:nth-child(2){
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+}
