@@ -6,25 +6,27 @@ import { addFoodAction } from '../../../redux/actions'
     render() {
         return (
             <div className="shop-food-detail-wapper">
-                <div className="title">
-                    <span>{this.props.detailInfo.name}</span>
-                    <span>{this.props.detailInfo.description}</span>
-                </div>
-                <ul className="container">
-                    {
-                        this.props.detailInfo.foods ? this.props.detailInfo.foods.map((item, index) => (
-                            <li className='detail-info-item' key={index}>
-                                <img src={`${this.props.imgUrl}${item.image_path}`} alt="" />
-                                <ul>
-                                    <li>{item.name}</li>
-                                    <li>{item.description}</li>
-                                    <li>{item.tips}</li>
-                                    <li><span>￥20 起</span><span onClick={()=>{this.props.dispatchFood(item)}}>+</span></li>
-                                </ul>
-                            </li>
-                        )) : ''
-                    }
-                </ul>
+              {
+                  this.props.detailInfo.name?<><div className="title">
+                  <span>{this.props.detailInfo.name}</span>
+                  <span>{this.props.detailInfo.description}</span>
+              </div>
+              <ul className="container">
+                  {
+                      this.props.detailInfo.foods ? this.props.detailInfo.foods.map((item, index) => (
+                          <li className='detail-info-item' key={index}>
+                              <img src={`${this.props.imgUrl}${item.image_path}`} alt="" />
+                              <ul>
+                                  <li>{item.name}</li>
+                                  <li>{item.description}</li>
+                                  <li>{item.tips}</li>
+                                  <li><span>￥20 起</span><span onClick={()=>{this.props.dispatchFood(item)}}>+</span></li>
+                              </ul>
+                          </li>
+                      )) : ''
+                  }
+              </ul></>:''
+              }
             </div>
         )
     }

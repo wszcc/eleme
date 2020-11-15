@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import './search-shop-list.css'
-
-export class SearchShopList extends Component {
+import { connect } from "react-redux";
+import { withRouter } from 'react-router'
+class SearchShopList extends Component {
+    handleResturantDetail=()=>{
+        this.props.history.push('/resturant/detail')
+   }
     render() {
         return (
-            <div className="search-shop-list">
+            <div className="search-shop-list"
+            onClick={this.handleResturantDetail}>
                 <div><img src={`//elm.cangdu.org/img/${this.props.searchInfo.image_path}`} alt='img'></img></div>
                 <div>
                     <ul>
@@ -17,3 +22,10 @@ export class SearchShopList extends Component {
         )
     }
 }
+const mapStateToProps = (state) => {
+    return {
+        imgUrl: state.imgUrl,
+        imgBaseUrl: state.imgBaseUrl
+    }
+}
+export default connect(mapStateToProps)(withRouter(SearchShopList))

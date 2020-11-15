@@ -2,7 +2,7 @@ import { React, Component } from 'react'
 import './search-input.css'
 import { reqRestaurant } from '../../../api/ajax'
 import { connect } from 'react-redux'
-import { SearchShopList } from '../../../containers/common/search-shop-list/SearchShopLIst'
+import  SearchShopList  from '../../../containers/common/search-shop-list/SearchShopLIst'
 class SearchInput extends Component {
     constructor(props) {
         super(props)

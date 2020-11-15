@@ -1,8 +1,10 @@
 import { React,Component } from 'react'
-import { NavBar, Icon } from 'antd-mobile';
+import { NavBar, Icon,Modal } from 'antd-mobile';
 import './mine.css'
 import { connect } from 'react-redux'
 import  { withRouter } from 'react-router'
+const alert = Modal.alert
+
 class Mine extends Component{
     render(){
         return (
@@ -38,9 +40,13 @@ class Mine extends Component{
                 <ul className='mine-menu'>
                     <li onClick={()=>{this.props.history.push('/order')}}><i className="iconfont">&#xe61e;</i>我的订单</li>
                     <li onClick={()=>{this.props.history.push('/userscore')}}><i style={{color:'red'}} className="iconfont">&#xe611;</i>积分商城</li>
-                    <li><i style={{color:'yellow'}} className="iconfont third">&#xe612;</i>饿了么会员卡</li>
-                    <li><i style={{color:'blue'}} className="iconfont forth">&#xe627;</i>服务中心</li>
-                    <li><i style={{color:'blue'}} className="iconfont five">&#xe722;</i>下载饿了么App</li>
+                    <li  onClick={() =>
+                        alert('请前往手机App中设置', ``, [
+                          { text: 'Ok'},
+                        ])
+                      }><i style={{color:'yellow'}} className="iconfont third">&#xe612;</i>饿了么会员卡</li>
+                    <li onClick={()=>{this.props.history.push('/servicecenter')}}><i style={{color:'blue'}} className="iconfont forth">&#xe627;</i>服务中心</li>
+                    <li onClick={()=>{this.props.history.push('/download')}}><i style={{color:'blue'}} className="iconfont five">&#xe722;</i>下载饿了么App</li>
                 </ul>
             </div>
         )

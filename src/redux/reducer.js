@@ -1,7 +1,7 @@
 import {
     CURRENTADDRESS, CURRENTRESTURANTDETAIL
     , ADDFOOD, DELETEFOOD,CHANGEUSERNAME,
-    CHANGEADDRESS
+    CHANGEADDRESS,CURRENTSERVICE
 } from './actoins-type'
 const defaultState = {
     imgBaseUrl: 'https://fuss10.elemecdn.com',
@@ -95,6 +95,10 @@ const defaultState = {
         "balance": 0,
         "avatar": "default.jpg",
         "__v": 0
+    },
+    currentService:{
+        name: "活动问题",
+        context: "### Q1: 我是新用户，为什么不能享受新用户下单立减优惠／新用户首单红包？ * 新用户是指您的下单设备、手机号、饿了么账号、支付账号都是第一次在饿了么平台使用。以上任意条件不满足，都不能享受新用户优惠。 * 新用户立减优惠、新用户红包、满减特价菜活动不能同时使用。在您首次下单过程中，我们会优先为您选择优惠最大（优惠金额最高）的。 ### Q2: 商品活动规则 * 新用户下首单时，如果用户自己主动退单，则下次不可再享受新用户优惠，如果是商家或客服取消订单，则可以再次享受新用户优惠。 * 6.0版本（含）之前的所有版本，用户在下单时不再享受任何优惠（包含新用户、在线满减、商品折扣、红包等）。 * 移动端所有活动，相同手机号或设备每天只限3单，超过3单收取原价。 * 每个订单最多享受3份活动优惠，超过3份的其余商品收取原价。 * 下单手机号和所选择下单的商家不在同一城市，不享受优惠活动。 * 配送费不计入满减活动的门槛。 "
     }
 }
 
@@ -124,6 +128,10 @@ const reducer = (state = defaultState, action) => {
         case CHANGEADDRESS:
             newState = JSON.parse(JSON.stringify(state))
             newState.currentAddress.name=action.name
+            return newState
+        case CURRENTSERVICE:
+            newState = JSON.parse(JSON.stringify(state))
+            newState.currentService=action.service
             return newState
         default:
             return state

@@ -15,3 +15,6 @@ export const CHANGEUSERNAME='changeUserName'
 
 // 改变收货地址
 export const CHANGEADDRESS='changeAddress'
+
+// 当前的服务
+export const CURRENTSERVICE='currentService'

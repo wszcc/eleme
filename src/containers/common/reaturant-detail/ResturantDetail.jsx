@@ -47,10 +47,6 @@ class ResturantDetail extends Component {
                 <div>
                     <Tabs tabs={tabs}
                         initialPage={0}
-                        // onChange={(tab, index) => {
-                        //     !index ? document.querySelector('.resturant-detail .shop-car').style.display = 'block' :
-                        //     document.querySelector('.resturant-detail .shop-car').style.display = 'none'
-                        // }}
                     >
                         <div className='left-wapper'>
                             <ul className="left">

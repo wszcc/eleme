@@ -3,7 +3,8 @@ import {
     CURRENTRESTURANTDETAIL,
     ADDFOOD, DELETEFOOD,
     CHANGEUSERNAME,
-    CHANGEADDRESS
+    CHANGEADDRESS,
+    CURRENTSERVICE
 } from './actoins-type'
 //获取当前定位城市的action
 export const currentAddress = (currentCity) => (
@@ -50,5 +51,13 @@ export const changeAddress=(newAddress)=>{
     return {
         type:CHANGEADDRESS,
         name:newAddress
+    }
+}
+
+// 改变当前的服务
+export const changeService=(newService)=>{
+    return {
+        type:CURRENTSERVICE,
+        service:newService
     }
 }

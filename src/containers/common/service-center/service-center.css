@@ -1,0 +1,36 @@
+.service-center-wapper .serveicer{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-around;
+    line-height: 30px;
+    padding-top: 20px;
+    border-bottom: 1px solid#DEE1E6;
+}
+.service-center-wapper .serveicer div{
+    text-align: center;
+    font-size: 25px;
+}
+.service-center-wapper .serveicer div:nth-child(1){
+    color: red;
+}
+.service-center-wapper .serveicer li:nth-child(2) div{
+    color: greenyellow;
+    font-size: 35px;
+}
+.service-center-wapper .hot-problem{
+    font-size: 15px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid#DEE1E6;
+}
+.service-center-wapper .problem-caption li{
+    font-size: 12px;
+    padding-left: 15px;
+    line-height: 40px;
+    border-top: 1px solid#DEE1E6;
+    display: flex;
+}
+.service-center-wapper .problem-caption li i{
+    margin-right: 10px;
+    margin-left: auto;
+}

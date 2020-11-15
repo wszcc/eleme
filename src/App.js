@@ -9,6 +9,10 @@ import  ResturantDetail from './containers/common/reaturant-detail/ResturantDeta
 import  Order  from './pages/order/Order'
 import  UserInfo  from './containers/common/user-info/UserInfo'
 import  UserHead  from './containers/common/user-head/UserHead'
+import UserScore from './containers/common/user-score/UserScore'
+import ServiceCenter from './containers/common/service-center/ServiceCenter'
+import CurrentService from './containers/common/current-service/CurrentService'
+import DownLoad from './containers/common/download-eleme/DownLoad'
 class App extends Component {
   render(){
     return (
@@ -25,6 +29,10 @@ class App extends Component {
             <Route path='/order' component={Order}></Route>
             <Route path='/userinfo' component={UserInfo}></Route>
             <Route path='/userhead' component={UserHead}></Route>
+            <Route path='/userscore' component={UserScore}></Route>
+            <Route path='/servicecenter' component={ServiceCenter}></Route>
+            <Route path='/currentservice' component={CurrentService}></Route>
+            <Route path='/download' component={DownLoad}></Route>
             </Switch>
             
         </HashRouter>

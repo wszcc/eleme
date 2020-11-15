@@ -1,0 +1,11 @@
+.user-head-wapper img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-top: 200px;
+}
+.user-head-wapper{
+    background-color: #DEE1E6;
+    height: 640px;
+}

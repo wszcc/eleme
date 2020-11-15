@@ -1,0 +1,14 @@
+.download-wapper img{
+    margin: 50px;
+    border-radius: 10px;
+}
+.download-wapper .download-app{
+    display: block;
+    width: 75%;
+    margin: 0px auto;
+    background-color: greenyellow;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}

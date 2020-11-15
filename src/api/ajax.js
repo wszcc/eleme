@@ -45,5 +45,8 @@ export const reqInfoComment = (url,type,data)=>(axios(url,type,data))
 // 获取用户信息
 export const reqUserInfo = (url,type,data)=>(axios(url,type,data))
 
+// 请求服务中心的信息
+export const reqServiceCenter = (url,type,data)=>(axios(url,type,data))
+
 
 
