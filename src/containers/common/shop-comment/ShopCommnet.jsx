@@ -3,7 +3,7 @@ import './shop-comment.css'
 import { CommentCategory } from './comment-category/CommentCategory'
 import  CommentInfo from './comment-info/CommentInfo'
 import { CommentScore } from './comment-score/CommentScore'
-export class ShopComment extends Component{
+class ShopComment extends Component{
     render(){
         return (
             <div className="shop-comment-wapper">
@@ -14,3 +14,4 @@ export class ShopComment extends Component{
         )
     }
 }
+export default ShopComment

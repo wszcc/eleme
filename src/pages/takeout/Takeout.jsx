@@ -23,6 +23,7 @@ class Takeout extends Component {
             })
         })
     }
+    
     componentDidMount() {
         reqFoodSort('v2/index_entry', 'GET').then(res => {
             this.setState({

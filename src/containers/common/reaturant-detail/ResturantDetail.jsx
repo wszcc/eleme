@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component,lazy,Suspense } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import './resturant-detail.css'
 import { Tabs, Badge } from 'antd-mobile';
 import { reqShopFoodSortList } from '../../../api/ajax'
-import ShopFoodDetail from '../../common/shop-food-detail/ShopFoodDetail'
-import { ShopComment } from '../shop-comment/ShopCommnet'
+import { Loading } from '../../loading/Loading'
+const ShopFoodDetail =lazy(()=>import ('../../common/shop-food-detail/ShopFoodDetail'))
+const ShopComment = lazy(()=>import('../shop-comment/ShopCommnet'))
 const tabs = [
     { title: <Badge>商品</Badge> },
     { title: <Badge>评价</Badge> }
@@ -31,7 +32,8 @@ class ResturantDetail extends Component {
     }
     render() {
         return (
-            <div className="resturant-detail">
+           <Suspense fallback={<Loading></Loading>}>
+                <div className="resturant-detail">
                 <div className="resturant-filter">
                     <img src={`${this.props.imgUrl}${this.props.currentResturantInfo.image_path}`} alt="" />
                 </div>
@@ -56,7 +58,6 @@ class ResturantDetail extends Component {
                                             this.setState({
                                                 currentCategory: this.state.leftData[index]
                                             })
-                                            console.log(this.state.currentCategory)
                                         }} key={index}>{item.name}</li>
                                     )) : ''
                                 }
@@ -82,6 +83,7 @@ class ResturantDetail extends Component {
                 </ul>
             </div>
 
+           </Suspense>
         )
     }
 }

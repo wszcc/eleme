@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import { deleteFoodActon } from '../../redux/actions'
 class Order extends Component {
+    
     render() {
         return (
             <div className="order-wapper">

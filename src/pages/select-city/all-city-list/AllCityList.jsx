@@ -2,7 +2,8 @@ import { React, Component } from 'react'
 import './all-city-list.css'
 import { reqCityList } from "../../../api/ajax";
 import  AllCityItem  from './all-city-item/AllCityItem'
-export class AllCityList extends Component {
+ class AllCityList extends Component {
+    
     constructor(){
         super()
         this.state = {
@@ -29,3 +30,4 @@ export class AllCityList extends Component {
         )
     }
 }
+export default AllCityList

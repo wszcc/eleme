@@ -3,6 +3,7 @@ import './all-city-item.css'
 import { withRouter } from 'react-router'
 
 class AllCityItem extends Component { 
+    
     constructor(){
         super()
         this.state={

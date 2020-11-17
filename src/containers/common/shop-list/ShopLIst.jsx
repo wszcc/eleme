@@ -1,11 +1,12 @@
-import { React, Component } from 'react'
+import { React, Component,Suspense,lazy } from 'react'
 import { Menu, ActivityIndicator, NavBar, Icon } from 'antd-mobile'
 import './shop-list.css'
 import { reqAllShopList } from '../../../api/ajax.js'
 import { reqNearResturant } from '../../../api/ajax'
-import  NearResturant  from '../near-resturant/NearResturant'
 import { withRouter } from 'react-router'
 import { connect } from 'react-redux'
+import { Loading } from "../../loading/Loading";
+const NearResturant = lazy(()=>import ('../near-resturant/NearResturant'))
 let data = [
     {
         value: '1',
@@ -188,16 +189,10 @@ class ShopList extends Component {
             </div>
         );
         return (
-            <div className="shop-list">
+            <Suspense fallback={<Loading></Loading>}>
+                <div className="shop-list">
                 <NavBar
-                    // style={{
-                    //     position:'fixed',
-                    //     top:'0',
-                    //     left:'0',
-                    //     right:'0',
-                    //     opacity: 1,
-
-                    // }}
+                   
                     onLeftClick={()=>{this.props.history.go(-1)}}
                     mode="dark"
                     leftContent={[
@@ -210,13 +205,7 @@ class ShopList extends Component {
                     <div>
                         
                         <NavBar
-                        // style={{
-                        //     position:'fixed',
-                        //     top:'47px',
-                        //     left:'0',
-                        //     right:'0',
-                        //     opacity: 1,
-                        // }}
+            
                             mode='light'
                             leftContent='分类'
                             onLeftClick={this.handleClick}
@@ -236,6 +225,7 @@ class ShopList extends Component {
                     }
                 </div>
             </div>
+            </Suspense>
         )
     }
 }

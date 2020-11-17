@@ -10,6 +10,7 @@ import { withRouter } from 'react-router'
             hotCityList: ''
         }
     }
+    
     componentDidMount() {
         reqCityList('v1/cities', 'GET', { type: 'hot' })
             .then(res => {
