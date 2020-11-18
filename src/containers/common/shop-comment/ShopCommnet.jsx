@@ -1,5 +1,4 @@
 import React,{ Component } from 'react'
-import './shop-comment.css'
 import { CommentCategory } from './comment-category/CommentCategory'
 import  CommentInfo from './comment-info/CommentInfo'
 import { CommentScore } from './comment-score/CommentScore'
