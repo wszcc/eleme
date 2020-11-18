@@ -131,7 +131,7 @@ class ShopList extends Component {
                 }
             }
         });
-        console.log(label)
+        label=''
         reqNearResturant('shopping/restaurants', 'GET', {
             latitude: this.props.latitude,
             longitude: this.props.longitude,

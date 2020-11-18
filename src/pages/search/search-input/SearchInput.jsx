@@ -22,10 +22,7 @@ class SearchInput extends Component {
             this.setState({
                 searchResList:res.data
             })
-            console.log(res.data)
         })
-        console.log(this.state.inputValue)
-        
     }
     render() {
         return (
