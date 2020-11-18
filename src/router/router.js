@@ -1,4 +1,4 @@
-import {  Route} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import  Tab  from '../containers/tab/Tab'
 import  SelectCity  from '../pages/select-city/SelectCity'
 import  Login  from '../pages/login/Login'
@@ -12,7 +12,6 @@ import UserScore from '../containers/common/user-score/UserScore'
 import ServiceCenter from '../containers/common/service-center/ServiceCenter'
 import CurrentService from '../containers/common/current-service/CurrentService'
 import DownLoad from '../containers/common/download-eleme/DownLoad'
-
 const Routes=[
     {path:'/home',component:Tab},
     {path:'/selectcity',component:SelectCity},

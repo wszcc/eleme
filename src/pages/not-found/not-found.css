@@ -1,0 +1,9 @@
+.not-found{
+    background-color: #bbffaa;
+    text-align: center;
+    line-height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    font-size: 100px;
+    margin: 100px auto;
+}
