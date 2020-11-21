@@ -1,17 +1,19 @@
 import {Route} from 'react-router-dom'
-import  Tab  from '../containers/tab/Tab'
-import  SelectCity  from '../pages/select-city/SelectCity'
-import  Login  from '../pages/login/Login'
-import  CitySearch  from '../containers/common/city-search/CitySearch'
-import  ShopList  from '../containers/common/shop-list/ShopLIst'
-import  ResturantDetail from '../containers/common/reaturant-detail/ResturantDetail'
-import  Order  from '../pages/order/Order'
-import  UserInfo  from '../containers/common/user-info/UserInfo'
-import  UserHead  from '../containers/common/user-head/UserHead'
-import UserScore from '../containers/common/user-score/UserScore'
-import ServiceCenter from '../containers/common/service-center/ServiceCenter'
-import CurrentService from '../containers/common/current-service/CurrentService'
-import DownLoad from '../containers/common/download-eleme/DownLoad'
+import {lazy} from 'react'
+const  Tab = lazy(()=>import('../containers/tab/Tab'))
+const  SelectCity  = lazy(()=>import ('../pages/select-city/SelectCity'))
+const  Login = lazy(()=>import ('../pages/login/Login'))
+const  CitySearch = lazy(()=>import ('../containers/common/city-search/CitySearch'))
+const  ShopList  = lazy(()=>import ('../containers/common/shop-list/ShopLIst'))
+const  ResturantDetail = lazy(()=>import ('../containers/common/reaturant-detail/ResturantDetail'))
+const  Order  = lazy(()=>import ('../pages/order/Order'))
+const  UserInfo  = lazy(()=>import ('../containers/common/user-info/UserInfo'))
+const  UserHead  = lazy(()=>import ('../containers/common/user-head/UserHead'))
+const UserScore = lazy(()=>import ('../containers/common/user-score/UserScore'))
+const ServiceCenter = lazy(()=>import ('../containers/common/service-center/ServiceCenter'))
+const CurrentService = lazy(()=>import ('../containers/common/current-service/CurrentService'))
+const DownLoad = lazy(()=>import ('../containers/common/download-eleme/DownLoad'))
+
 const Routes=[
     {path:'/home',component:Tab},
     {path:'/selectcity',component:SelectCity},
